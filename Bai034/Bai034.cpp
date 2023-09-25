@@ -6,10 +6,10 @@ int main()
 	cin >> n;
 	float s = 0;
 	int i = 1;
-	while (i <= n)
+	while (i <= (2 * n + 1))
 	{
 		s = s + (float)i / (i + 1);
-		i++;
+		i = i + 2;
 	}
 	cout << s;
 	return 0;

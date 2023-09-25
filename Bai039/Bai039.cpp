@@ -1,16 +1,17 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
 	int n;
 	cin >> n;
-	float s = 0;
+	double t = 1;
 	int i = 1;
 	while (i <= n)
 	{
-		s = s + (float)i / (i + 1);
+		t = t * (1 + ((float)1 / pow(i,2)));
 		i++;
 	}
-	cout << s;
+	cout << t;
 	return 0;
 }

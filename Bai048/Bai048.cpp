@@ -4,13 +4,15 @@ int main()
 {
 	int n;
 	cin >> n;
-	float s = 0;
+	double x, t;
+	cin >> x;
+	t = x;
 	int i = 1;
 	while (i <= n)
 	{
-		s = s + (float)i / (i + 1);
+		t = t * (x + i);
 		i++;
 	}
-	cout << s;
+	cout << t;
 	return 0;
 }
